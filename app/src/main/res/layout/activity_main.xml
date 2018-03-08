@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="meuprimeiroapp.hamilton.com.filmesapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="554dp"
+        android:layout_height="697dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="121dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/policia" />
+
+            <LinearLayout
+                android:layout_width="381dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="LOGIN"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:id="@+id/campoNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="SENHA"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <EditText
+                    android:id="@+id/campoSenho"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Senha"
+                    android:inputType="numberPassword" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp">
+
+            <ImageButton
+                android:id="@+id/botaoCadastro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@android:color/transparent"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/voltar" />
+
+            <ImageButton
+                android:id="@+id/botaoAvancar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:backgroundTint="@android:color/transparent"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/seta" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
